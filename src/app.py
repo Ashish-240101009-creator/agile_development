@@ -38,3 +38,9 @@ class MarksSystem:
             return "D"
         else:
             return "F"
+    def generate_report(self):
+        lines = ["ROLL\tNAME\tMARKS\tGRADE"]
+        for r, s in self.students.items():
+            grade = "-" if s.marks is None else self.calculate_grade(r)
+            lines.append(f"{r}\t{s.name}\t{s.marks}\t{grade}")
+        return "\n".join(lines)

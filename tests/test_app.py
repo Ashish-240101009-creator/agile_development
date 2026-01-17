@@ -30,3 +30,8 @@ class TestSprint1(unittest.TestCase):
         ms.add_student("201", "Ravi")
         ms.add_marks("201", 95)
         self.assertEqual(ms.calculate_grade("201"), "A+")
+    def test_generate_report_header(self):
+        ms = MarksSystem()
+        ms.add_student("301", "Kiran")
+        report = ms.generate_report()
+        self.assertIn("ROLL", report)
