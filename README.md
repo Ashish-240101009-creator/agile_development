@@ -29,5 +29,11 @@ Scrum and Kanban are popular Agile frameworks. Scrum works in sprints. Kanban fo
 9. Conclusion
 Agile Development is widely used in the software industry. It improves product quality. Agile supports continuous improvement.
 
+<br>
+## Final Takeaway
+This project demonstrates Agile Software Engineering using Scrum-style sprints,
+Git-based workflow, and Test-Driven Development in Python.
+
+
 Author
 Ashish Prajapati
